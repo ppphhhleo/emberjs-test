@@ -1,0 +1,17 @@
+{{page-title "Testingauth"}}
+{{outlet}}
+
+{{!-- Display profile if user is logged in --}}
+{{#if this.auth.user}}
+  <div class="profile">
+    <h2>Welcome, {{this.auth.user.displayName}}!</h2>
+    <p>Email: {{this.auth.user.email}}</p>
+    {{#if this.auth.user.photoURL}}
+      <img src={{this.auth.user.photoURL}} alt="Profile Picture" />
+    {{/if}}
+    <button {{on "click" this.sign_out}}>Sign Out</button>
+  </div>
+{{else}}
+  {{!-- Display sign-in button if not logged in --}}
+  <button {{on "click" this.sign_in_with_popup}}>Sign In with Google</button>
+{{/if}}

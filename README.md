@@ -54,3 +54,13 @@ Specify what it takes to deploy your app.
 - Development Browser Extensions
   - [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   - [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
+
+
+## emberjs 
+
+controllers: [controllers](https://guides.emberjs.com/release/routing/controllers/)
+
+ember generate route route-name
+ember generate controller controller-name
+
+## deploy firebase 
